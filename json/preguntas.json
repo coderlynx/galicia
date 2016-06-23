@@ -1,38 +1,87 @@
 [
-    {
+   {
         "id": "01",
         "idCategoria": "01",
-        "texoPregunta": "Lorem ipsum dolor sit amet, consectetur adipisicing elit?",
-        "puntaje": 100
+        "texoPregunta": "¿En Argentina la prevalencia más alta de desnutrición es la que se manifiesta por déficit de talla o retraso del crecimiento?",
+        "puntaje": 100,
+		"tipoDeJuego": 1
     },
     {
         "id": "02",
         "idCategoria": "01",
-        "texoPregunta": "Lorem ipsum dolor sit amet, consectetur adipisicing elit?",
-        "puntaje": 200
+        "texoPregunta": "Pregunta 2 de categoria 1 alasasdsd?",
+        "puntaje": 200,
+		"tipoDeJuego": 1
     },
     {
         "id": "03",
         "idCategoria": "01",
-        "texoPregunta": "Lorem ipsum dolor sit amet, consectetur adipisicing elit?",
-        "puntaje": 300
+        "texoPregunta": "Pregunta 3 de categoria 1 alsdasdsd?",
+        "puntaje": 300,
+		"tipoDeJuego": 1
     },
     {
         "id": "04",
-        "idCategoria": "01",
-        "texoPregunta": "Lorem ipsum dolor sit amet, consectetur adipisicing elit?",
-        "puntaje": 400
+        "idCategoria": "02",
+        "texoPregunta": "Pregunta 1 de categoria 2?",
+        "puntaje": 400,
+		"tipoDeJuego": 1
     },
     {
         "id": "05",
-        "idCategoria": "01",
-        "texoPregunta": "Lorem ipsum dolor sit amet, consectetur adipisicing elit?",
-        "puntaje": 500
+        "idCategoria": "02",
+        "texoPregunta": "Pregunta 2 de categoria 2?",
+        "puntaje": 500,
+		"tipoDeJuego": 1
     },
     {
-        "id": "01",
+        "id": "06",
         "idCategoria": "02",
-        "texoPregunta": "Lorem ipsum dolor sit amet, consectetur adipisicing elit?",
-        "puntaje": 100
+        "texoPregunta": "Pregunta 3 de categoria 2?",
+        "puntaje": 100,
+		"tipoDeJuego": 1
+    },
+	
+    {
+        "id": "01",
+        "idCategoria": "01",
+        "texoPregunta": "¿En Argentina la prevalencia más alta de desnutrición es la que se manifiesta por déficit de talla o retraso del crecimiento?",
+        "puntaje": 100,
+		"tipoDeJuego": 2
+    },
+    {
+        "id": "02",
+        "idCategoria": "01",
+        "texoPregunta": "Pregunta 2 de categoria 1 alasasdsd?",
+        "puntaje": 200,
+		"tipoDeJuego": 2
+    },
+    {
+        "id": "03",
+        "idCategoria": "01",
+        "texoPregunta": "Pregunta 3 de categoria 1 alsdasdsd?",
+        "puntaje": 300,
+		"tipoDeJuego": 2
+    },
+    {
+        "id": "04",
+        "idCategoria": "02",
+        "texoPregunta": "Pregunta 1 de categoria 2?",
+        "puntaje": 400,
+		"tipoDeJuego": 2
+    },
+    {
+        "id": "05",
+        "idCategoria": "02",
+        "texoPregunta": "Pregunta 2 de categoria 2?",
+        "puntaje": 500,
+		"tipoDeJuego": 2
+    },
+    {
+        "id": "06",
+        "idCategoria": "02",
+        "texoPregunta": "Pregunta 3 de categoria 2?",
+        "puntaje": 100,
+		"tipoDeJuego": 2
     }
 ]

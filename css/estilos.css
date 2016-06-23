@@ -1,0 +1,250 @@
+*{margin: 0; padding: 0;}
+
+@font-face {
+    font-family: PTsans;
+    src: url('../fonts/PTN57F.ttf');
+}
+
+body{font-family: 'PTsans', sans-serif;}
+h1,h2,h3,h4,p,a{color: #838375;}
+
+.contenedor{max-width: 1024px; min-width: 600px; margin: auto;}
+.header{border-bottom: 10px solid #787878; height: 60px; padding: 20px 10px 0px 10px;}
+.header div{display: inline-block; width: 50%;}
+.logo1 img{float: left;}
+.logo2 img{float: right;}
+
+.p-nja{color: #FF6600;}
+
+/*TABLERO*/
+.rec-juegos{text-align: center; padding: 20px 0px 70px 0px;}
+.rec-juegos h1{font-size: 40px;}
+.rec-juegos a{text-decoration: none;}
+.rec-juegos div{
+	width: 27%; 
+	background-color: #F7F7F7;
+	border: 1px solid #e8e8e8;
+	margin-top: 30px;
+	padding: 10px;
+	display: inline-block; 
+	vertical-align: top;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	margin-right: 20px;
+}
+
+.juego h2{
+	padding: 30px 0px;
+	font-size: 40px;
+	line-height: 40px;
+}
+
+.jugar{
+	font-size: 20px;
+	background-color: #fff;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	padding: 10px;
+	-webkit-box-shadow: 0px 6px 4px -2px rgba(191,191,191,1);
+	-moz-box-shadow: 0px 6px 4px -2px rgba(191,191,191,1);
+	box-shadow: 0px 6px 4px -2px rgba(191,191,191,1);
+	margin-bottom: 30px;
+}
+
+.copyright{text-align: center; font-size: 13px; border-top: 1px solid #e8e8e8; padding: 20px 0px;}
+
+/*JUEGOS*/
+.pantalla-juego{
+	position: relative;
+	text-align: center;
+	padding: 20px;
+	margin: 30px 0px;
+	border: 1px solid #e8e8e8;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	-webkit-box-shadow: 0px 6px 4px -2px rgba(191,191,191,1);
+	-moz-box-shadow: 0px 6px 4px -2px rgba(191,191,191,1);
+	box-shadow: 0px 6px 4px -2px rgba(191,191,191,1);
+	padding-bottom: 40px;
+}
+
+.pantalla-juego h1{border-bottom: 1px solid #e8e8e8;padding-bottom: 10px;margin-bottom: 40px; font-size: 3em;}
+
+.imagen-juego-home{position: absolute; top: 0px; left: 70px;}
+.pregunta-respuesta, .imagen-juego-pregunta{display: inline-block;vertical-align: top;}
+.imagen-juego-pregunta{width: 30%;}
+.pregunta-respuesta{width: 55%;}
+
+.home{background-color: #FF6600;padding: 10px;position: absolute;top: 0;z-index: 1000;}
+.home a{color: #fff;}
+
+.consigna{font-size: 30px; margin: auto; margin-bottom: 60px;}
+.explicacion{width: 80%; margin: auto; font-size: 24px;}
+
+.nro{
+	position: absolute;
+	top: 0;
+	right: 20px;
+	background-color: #838375;
+	padding: 10px;
+	color: #fff;
+}
+
+.resultado{color: #FF6600; text-transform: uppercase; font-size: 40px; margin-bottom: 20px;}
+.next{margin-top: 30px;}
+.next a{text-decoration: none; font-size: 21px;}
+.suma{border: 2px solid #FF6600; padding: 10px; font-size: 24px; margin: 20px 250px 20px 250px;}
+
+/*VERDADERO O FALSO*/
+.opcion-v, .opcion-f{
+	background-color: #FF6600; 
+	color: #fff; 
+	text-decoration: none; 
+	height: 120px;
+	width: 120px;
+	padding: 22px 40px;
+	font-size: 40px;
+	  border-radius: 85px;
+	 -moz-border-radius: 85px;
+	 -webkit-border-radius: 85px;
+ }
+
+ .opcion-v{margin-right: 60px;}
+
+.tablero{overflow: hidden;}
+.tablero ul li{list-style: none;}
+.tablero ul li a{
+	text-decoration: none;
+ 	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	font-size: 2em;
+	font-weight: bold;
+	color: #fff;
+	-webkit-box-shadow: 0px 6px 4px -2px rgba(191,191,191,1);
+	-moz-box-shadow: 0px 6px 4px -2px rgba(191,191,191,1);
+	box-shadow: 0px 6px 4px -2px rgba(191,191,191,1);
+	background-color: #FF6600;
+	border: 1px solid #e1e1e1;
+	padding: 30px 50px;
+	margin: 10px;
+	float: left;
+}
+
+ /*TRIVIA*/
+ .trivia ul li{list-style: none;}
+
+ .trivia ul li{
+ 	text-decoration: none;
+ 	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	padding: 30px 20px;
+	margin: 10px;
+	font-size: 1.2em;
+	font-weight: bold;
+	color: #fff;
+	-webkit-box-shadow: 0px 6px 4px -2px rgba(191,191,191,1);
+	-moz-box-shadow: 0px 6px 4px -2px rgba(191,191,191,1);
+	box-shadow: 0px 6px 4px -2px rgba(191,191,191,1);
+	border: 1px solid #e5e5e5;
+ }
+
+.trivia h1{margin-bottom: 30px;}
+
+.cat-1, .cat-2, .cat-3, .cat-4 {display: inline-block; vertical-align: top; width: 20%;}
+.cat-1, .cat-2, .cat-3 {margin-right: 20px;}
+.cat-1 h2, .cat-2 h2, .cat-3 h2, .cat-4 h2{margin-bottom: 10px;}
+.cat-1 a, .cat-2 a, .cat-3 a, .cat-4 a{color: #fff; text-decoration: none; padding: 15px 35px; font-size: 2em;}
+
+.cat-1 ul li{background-color: #FF6600;}
+.cat-2 ul li{background-color: #838375;}
+.cat-3 ul li{background-color: #FF6600;}
+.cat-4 ul li{background-color: #838375;}
+
+.puntos-trivia{
+	position: absolute;
+	top: 0;
+	right: 20px;
+	background-color: #838375;
+	padding: 12px;
+	color: #fff;
+	font-size: 1.3em;
+	font-weight: bold;
+}
+
+.pantalla-trivia{padding-bottom: 10px;}
+.consigna-trivia{font-size: 30px;}
+
+.imagen-juego-trivia, .opciones-trivia{display: inline-block; vertical-align: top; margin-top: 20px;}
+.imagen-juego-trivia{width: 30%;}
+.opciones-trivia{width: 60%;}
+
+.imagen-juego-trivia img{width: 100%;}
+
+.opciones-trivia{margin-bottom: 40px;}
+.opciones-trivia a{
+	display: block; 
+	text-decoration: none; 
+	background-color: #F7F7F7;
+	padding: 15px;
+	font-size: 1.3em;
+	margin: 25px 0px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	-webkit-box-shadow: 0px 6px 4px -2px rgba(191,191,191,1);
+	-moz-box-shadow: 0px 6px 4px -2px rgba(191,191,191,1);
+	box-shadow: 0px 6px 4px -2px rgba(191,191,191,1);
+}
+
+.trivia-acierto a{background-color: #FF6600; color: #fff;}
+.trivia-acierto .resultado{margin-top: 20px;}
+
+
+/*QUERYS*/
+@media all and (max-width: 985px){
+	.cat-1, .cat-2, .cat-3, .cat-4 {width: 22%;}
+	.cat-1, .cat-2, .cat-3 {margin-right: 10px;}
+	.cat-1 a, .cat-2 a, .cat-3 a, .cat-4 a{padding: 15px 25px; font-size: 2em;}
+
+}
+
+@media all and (max-width: 800px){
+	.imagen-juego-home{left: 20px;}
+	.imagen-juego-pregunta img{width: 100%;}
+	.consigna{font-size: 26px!important; margin-bottom: 40px;}
+	.cat-1 a, .cat-2 a, .cat-3 a, .cat-4 a{padding: 15px 20px; font-size: 1.5em;}
+	.tablero ul li a{
+		font-size: 2em;
+		padding: 20px 40px;
+	}
+}
+
+@media all and (max-width: 650px){
+	.rec-juegos{padding-left: 10px; padding-bottom: 25px;}
+	.rec-juegos div{width: 40%;}
+	.juego h2{font-size: 26px;}
+	.copyright{padding: 20px 20px;}
+
+	.pantalla-juego{width: 90%;margin: auto;padding: 20px;margin-top: 30px;margin-bottom: 30px;padding-bottom: 80px;}
+
+	.pantalla-trivia{padding-bottom: 10px;}
+	.suma{margin: 20px 150px 20px 150px;}
+	.opciones-trivia a{margin: 25px 0px;}
+	
+	.imagen-juego-home{left: -50px;}
+
+	.cat-1 a, .cat-2 a, .cat-3 a, .cat-4 a{padding: 15px 10px; font-size: 1.3em;}
+
+	.tablero ul li a{
+		font-size: 2em;
+		padding: 20px 35px;
+		margin: 8px;
+	}
+	
+}
+

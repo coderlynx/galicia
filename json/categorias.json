@@ -1,10 +1,88 @@
 [
     {
         "idCategoria": "01",
-        "tipoCategoria": "Historia"
+        "tipoCategoria": "Historia",
+		"tipoDeJuego": 1
     },
     {
         "idCategoria": "02",
-        "tipoCategoria": "Arte"
+        "tipoCategoria": "Arte",
+		"tipoDeJuego": 1
+    },
+	{
+        "idCategoria": "03",
+        "tipoCategoria": "Arte",
+		"tipoDeJuego": 1
+    },
+	{
+        "idCategoria": "04",
+        "tipoCategoria": "Arte",
+		"tipoDeJuego": 1
+    },
+	{
+        "idCategoria": "05",
+        "tipoCategoria": "Arte",
+		"tipoDeJuego": 1
+    },
+	{
+        "idCategoria": "06",
+        "tipoCategoria": "Arte",
+		"tipoDeJuego": 1
+    },
+	{
+        "idCategoria": "07",
+        "tipoCategoria": "Arte",
+		"tipoDeJuego": 1
+    },
+	{
+        "idCategoria": "08",
+        "tipoCategoria": "Arte",
+		"tipoDeJuego": 1
+    },
+	{
+        "idCategoria": "09",
+        "tipoCategoria": "Arte",
+		"tipoDeJuego": 1
+    },
+	{
+        "idCategoria": "10",
+        "tipoCategoria": "Arte",
+		"tipoDeJuego": 1
+    },
+	
+    {
+        "idCategoria": "01",
+        "tipoCategoria": "Historia",
+		"tipoDeJuego": 2
+    },
+    {
+        "idCategoria": "02",
+        "tipoCategoria": "Arte",
+		"tipoDeJuego": 2
+    },
+	{
+        "idCategoria": "03",
+        "tipoCategoria": "Arte",
+		"tipoDeJuego": 2
+    },
+	{
+        "idCategoria": "04",
+        "tipoCategoria": "Arte",
+		"tipoDeJuego": 2
+    },
+	{
+        "idCategoria": "05",
+        "tipoCategoria": "Arte",
+		"tipoDeJuego": 2
+    },
+	{
+        "idCategoria": "06",
+        "tipoCategoria": "Arte",
+		"tipoDeJuego": 2
+    },
+	{
+        "idCategoria": "07",
+        "tipoCategoria": "Arte",
+		"tipoDeJuego": 2
     }
 ]
