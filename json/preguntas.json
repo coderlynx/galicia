@@ -1,0 +1,38 @@
+[
+    {
+        "id": "01",
+        "idCategoria": "01",
+        "texoPregunta": "Lorem ipsum dolor sit amet, consectetur adipisicing elit?",
+        "puntaje": 100
+    },
+    {
+        "id": "02",
+        "idCategoria": "01",
+        "texoPregunta": "Lorem ipsum dolor sit amet, consectetur adipisicing elit?",
+        "puntaje": 200
+    },
+    {
+        "id": "03",
+        "idCategoria": "01",
+        "texoPregunta": "Lorem ipsum dolor sit amet, consectetur adipisicing elit?",
+        "puntaje": 300
+    },
+    {
+        "id": "04",
+        "idCategoria": "01",
+        "texoPregunta": "Lorem ipsum dolor sit amet, consectetur adipisicing elit?",
+        "puntaje": 400
+    },
+    {
+        "id": "05",
+        "idCategoria": "01",
+        "texoPregunta": "Lorem ipsum dolor sit amet, consectetur adipisicing elit?",
+        "puntaje": 500
+    },
+    {
+        "id": "01",
+        "idCategoria": "02",
+        "texoPregunta": "Lorem ipsum dolor sit amet, consectetur adipisicing elit?",
+        "puntaje": 100
+    }
+]

@@ -1,0 +1,38 @@
+[
+    {
+        "id": "01",
+        "idPregunta": "01",
+        "textoRespuesta": "Animi optio ad nisi, atque eligendi quidem",
+        "esCorrecta": true
+    },
+    {
+        "id": "02",
+        "idPregunta": "01",
+        "textoRespuesta": "Animi optio ad nisi, atque eligendi quidem",
+        "esCorrecta": false
+    },
+    {
+        "id": "03",
+        "idPregunta": "01",
+        "textoRespuesta": "Animi optio ad nisi, atque eligendi quidem",
+        "esCorrecta": false
+    },
+    {
+        "id": "04",
+        "idPregunta": "05",
+        "textoRespuesta": "Animi optio ad nisi, atque eligendi quidem",
+        "esCorrecta": false
+    },
+    {
+        "id": "05",
+        "idPregunta": "05",
+        "textoRespuesta": "Animi optio ad nisi, atque eligendi quidem",
+        "esCorrecta": false
+    },
+    {
+        "id": "06",
+        "idPregunta": "05",
+        "textoRespuesta": "Animi optio ad nisi, atque eligendi quidem",
+        "esCorrecta": true
+    }
+]
