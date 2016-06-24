@@ -24,12 +24,16 @@
             managerPreguntas.init();
 			managerPreguntas.mostrarPreguntasDeUnaCategoria(categoria,2);
 			
+			var audio = new Audio("sonidos/beep.mp3");
+			audio.play();
+			
 			$(".opcion").click(function() {
 					cambiarEtapa();
 					if(etapa > 3)
 						window.location.href = "sabiasQueFinal.html";
 						
 					managerPreguntas.mostrarPreguntasDeUnaCategoria(categoria,2);
+					audio.play();
 				});
 				
 			function cambiarEtapa() {

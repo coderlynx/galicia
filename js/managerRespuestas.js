@@ -1,19 +1,22 @@
 var respuestas = [];
+var puntaje;
 var managerRespuestas = {
     self: function() {
         return this;
     },
     init: function(preguntas, contenedor) {
         // Reemplazar por archivo .php
-        $.getJSON(
-            "json/respuestas.json",
-            function(data) {
-                $.each(data, function(key, value) {
+		$.ajax({
+		  url: "json/respuestas.json",
+		  dataType: 'json',
+		  async: false,
+		  success: function(data) {
+			$.each(data, function(key, value) {
                     respuestas.push(value);
                     respuestas[key]['respuestaSeleccionada'] = false;
                 });
-            }
-        )
+		  }
+		});
     },
     mostrarRespuestas: function(contenedor, pregunta) {
         if(!$(contenedor).hasClass('desplegado')) {
@@ -97,7 +100,7 @@ var managerRespuestas = {
 	mostrarRespuestaCorrecta: function(pregunta, tipoDeJuego) {
 		$.each(respuestas, function(key, value) {
             if (pregunta == value['idPregunta'] && tipoDeJuego == value['tipoDeJuego'] ) {
-					$('#explicacion').html(respuestas[key].textoRespuesta);
+					
 					return;     
             }
         });
@@ -105,14 +108,27 @@ var managerRespuestas = {
 	verificarRespuestaVoF: function(pregunta, tipoDeJuego,rtaSeleccionada) {
 		$.each(respuestas, function(key, value) {
             if (pregunta == value['idPregunta'] && tipoDeJuego == value['tipoDeJuego'] ) {
-					if (value['esCorrecta'] == rtaSeleccionada){
-						audio = new Audio('correcto.mp3');
-						audio.play();
-					} else {
-						audio = new Audio('error.mp3');
-						audio.play();
-					}
-					return;     
+				//si lo elegido por el usuario es correcto
+				if (value['esCorrecta'] == rtaSeleccionada){
+					audio = new Audio('sonidos/correcto.mp3');
+					audio.play();
+					localStorage.setItem("puntajePuntual", 100);
+					puntaje = Number(localStorage.puntajeAcumulado) + 100; 
+					localStorage.setItem("puntajeAcumulado", puntaje);
+				} else {
+					audio = new Audio('sonidos/error.mp3');
+					audio.play();
+					localStorage.setItem("puntajePuntual", 0);
+				}
+				//segun si el valor de la rta es V o F dibujo ese texto en la pantalla (independientemente de lo elegido por el usuario)
+				if(value['esCorrecta'] == 0){
+					$('#valor').html('Falso');
+				} else {
+					$('#valor').html('Verdadero');
+				}
+				
+				$('.explicacion').html(respuestas[key].textoRespuesta);
+				return;     
             }
         });
 	}

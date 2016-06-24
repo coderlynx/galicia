@@ -2,43 +2,43 @@
 	{
         "id": "01",
         "idPregunta": "01",
-        "textoRespuesta": "Entre los 4-6 meses aumenta – en gramos- casi el doble por semana que al año de vida.",
-        "esCorrecta": true,
+        "textoRespuesta": "Entre los 4-6 meses aumenta (en gramos) casi el doble por semana que al a&ntilde;o de vida.",
+        "esCorrecta": 1,
 		"tipoDeJuego":1
     },
     {
         "id": "02",
         "idPregunta": "02",
-        "textoRespuesta": "La LM -en situaciones especiales, muy poco frecuentes y siempre bajo estricta prescripción Médica - puede necesitar ser complementada o reemplazada con sucedáneos de la leche materna.",
-        "esCorrecta": false,
+        "textoRespuesta": "La LM -en situaciones especiales, muy poco frecuentes y siempre bajo estricta prescripci&oacute;n M&eacute;dica - puede necesitar ser complementada o reemplazada con suced&aacute;neos de la leche materna.",
+        "esCorrecta": 0,
 		"tipoDeJuego":1
     },
     {
         "id": "03",
         "idPregunta": "03",
-        "textoRespuesta": "Puede ofrecerse al niño en cada mamada uno, o los dos pechos.",
-        "esCorrecta": false,
+        "textoRespuesta": "Puede ofrecerse al ni&ntilde;o en cada mamada uno, o los dos pechos.",
+        "esCorrecta": 0,
 		"tipoDeJuego":1
     },
     {
         "id": "04",
         "idPregunta": "04",
         "textoRespuesta": "Animi optio ad nisi, atque eligendi quidem",
-        "esCorrecta": false,
+        "esCorrecta": 0,
 		"tipoDeJuego":1
     },
     {
         "id": "05",
         "idPregunta": "05",
         "textoRespuesta": "Animi optio ad nisi, atque eligendi quidem",
-        "esCorrecta": false,
+        "esCorrecta": 0,
 		"tipoDeJuego":1
     },
     {
         "id": "06",
         "idPregunta": "06",
         "textoRespuesta": "Animi optio ad nisi, atque eligendi quidem",
-        "esCorrecta": true,
+        "esCorrecta": 1,
 		"tipoDeJuego":1
     },
 	

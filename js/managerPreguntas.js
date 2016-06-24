@@ -15,14 +15,6 @@ var managerPreguntas = {
                 });
 		  }
 		});
-        /*$.getJSON(
-            "json/preguntas.json",
-            function(data) { 
-                $.each(data, function(key, value) {
-                    preguntas.push(value);
-                });
-            }
-        );*/
     },
     mostrarPreguntas: function(idCategoria,tipoDeJuego) {
         var section = $("#preguntas");
@@ -49,6 +41,7 @@ var managerPreguntas = {
 	mostrarPreguntasDeUnaCategoria: function(categoria, tipoDeJuego) {
 		var consigna = $('.consigna');
 		var rta = $('#rta');
+		var idPregunta = $('#pregunta');
 		var preguntasDeUnaCategoria = [];
 		var etapa = Number(localStorage.etapa) - 1; 
 		$.each(preguntas, function(key, value) {
@@ -56,9 +49,9 @@ var managerPreguntas = {
 				preguntasDeUnaCategoria.push(value);
 			} 
         });
-		consigna.html(preguntasDeUnaCategoria[etapa]['texoPregunta']);
+		consigna.html(preguntasDeUnaCategoria[etapa]['textoPregunta']);
 		rta.val(preguntasDeUnaCategoria[etapa]['respuesta']);
-		rta.val(preguntasDeUnaCategoria[etapa]['id']);
+		idPregunta.val(preguntasDeUnaCategoria[etapa]['id']);
 	},
     seleccionarPregunta: function(event) {
         // El contexto de la función es el article donde se bindea el evento 'click'

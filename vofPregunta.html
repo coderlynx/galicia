@@ -16,50 +16,31 @@
     <script src="js/respuesta.js"></script>
 	<script>
         $(document).ready(function(){
-			var etapa,putaje;
+			var etapa;
 			
+			//cada vez que entra a esta pagina es porque paso una etapa
 			cambiarEtapa();
 
 			var categoria = juego.getUrlParameter('categoria');
 			localStorage.setItem("categoria", categoria);
 			
             managerPreguntas.init();
-			managerPreguntas.mostrarPreguntasDeUnaCategoria(categoria,1);
+			managerPreguntas.mostrarPreguntasDeUnaCategoria(categoria,1);//tipo de juego 1 => VoF
+			
+			var audio = new Audio("sonidos/beep.mp3");
+			audio.play();
 			
 			$(".opcion").click(function() {
 					var rta_seleccionada = parseInt($(this).data("valor"));
-					var rta_real = $('#rta').val();
+					
 					var pregunta = $('#pregunta').val();
-					
-					if (rta_real == rta_seleccionada) {
-						sumarPuntaje();
-						cambiarPuntajeActual(100);
-					} else {
-						cambiarPuntajeActual(0);
-					}
-					
-					cambiarEtapa();
-					
+
 					if(etapa <= 3) {
-						window.location.href = "vofRespuesta.html?rtaReal=" + rta_real + "&rtaSeleccionada=" + rta_seleccionada + "&pregunta=" + pregunta;
-					} else {
-						window.location.href = "vofFinal.html";
-					}
-						
-						
-					managerPreguntas.mostrarPreguntasDeUnaCategoria(categoria,1);
+						window.location.href = "vofRespuesta.html?rtaSeleccionada=" + rta_seleccionada + "&pregunta=" + pregunta;
+					} 
+
 				});
-				
-				function sumarPuntaje() {
-						puntaje = Number(localStorage.puntaje) + 100; 
-						localStorage.setItem("puntajeAcumulado", puntaje);
-				
-				}
-				
-				function cambiarPuntajeActual(valor) {
-						localStorage.setItem("puntajePuntual", valor);
-				}
-				
+
 			function cambiarEtapa() {
 				etapa = Number(localStorage.etapa) + 1; 
 				localStorage.setItem("etapa",etapa);
@@ -76,13 +57,13 @@
 		</div>
 		<div class="pantalla-juego">
 			<div class="home"><a href="vof.html"><img src="img/home.png" alt=""></a></div>
-			<div class="nro">- 1 de 3 -</div>
+			<div class="nro">- <span id="etapa">1</span> de 3 -</div>
 			<h1>Verdadero <span class="p-nja">o Falso</span></h1>
 			<div class="imagen-juego-pregunta"><img src="img/alimentando-bb.png" alt=" "></div>
 			<div class="pregunta-respuesta">
 				<p class="consigna">Un bebé bien alimentado aumenta más de peso por semana entre los 4 y 6 meses, que entre los 6 meses y el año.</p>
-				<a href="vof_2.html" class="opcion-v" data-valor="1">V</a>
-				<a href="vof_2.html" class="opcion-f" data-valor="0">F</a>
+				<a href="#" class="opcion-v opcion" data-valor="1">V</a>
+				<a href="#" class="opcion-f opcion" data-valor="0">F</a>
 				<input id="rta" type="hidden" />
 				<input id="pregunta" type="hidden" />
 			</div>

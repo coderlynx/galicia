@@ -1,88 +1,88 @@
 [
     {
         "idCategoria": "01",
-        "tipoCategoria": "Historia",
+        "tipoCategoria": "01",
 		"tipoDeJuego": 1
     },
     {
         "idCategoria": "02",
-        "tipoCategoria": "Arte",
+        "tipoCategoria": "02",
 		"tipoDeJuego": 1
     },
 	{
         "idCategoria": "03",
-        "tipoCategoria": "Arte",
+        "tipoCategoria": "03",
 		"tipoDeJuego": 1
     },
 	{
         "idCategoria": "04",
-        "tipoCategoria": "Arte",
+        "tipoCategoria": "04",
 		"tipoDeJuego": 1
     },
 	{
         "idCategoria": "05",
-        "tipoCategoria": "Arte",
+        "tipoCategoria": "05",
 		"tipoDeJuego": 1
     },
 	{
         "idCategoria": "06",
-        "tipoCategoria": "Arte",
+        "tipoCategoria": "06",
 		"tipoDeJuego": 1
     },
 	{
         "idCategoria": "07",
-        "tipoCategoria": "Arte",
+        "tipoCategoria": "07",
 		"tipoDeJuego": 1
     },
 	{
         "idCategoria": "08",
-        "tipoCategoria": "Arte",
+        "tipoCategoria": "08",
 		"tipoDeJuego": 1
     },
 	{
         "idCategoria": "09",
-        "tipoCategoria": "Arte",
+        "tipoCategoria": "09",
 		"tipoDeJuego": 1
     },
 	{
         "idCategoria": "10",
-        "tipoCategoria": "Arte",
+        "tipoCategoria": "10",
 		"tipoDeJuego": 1
     },
 	
     {
-        "idCategoria": "01",
-        "tipoCategoria": "Historia",
+        "idCategoria": "11",
+        "tipoCategoria": "01",
 		"tipoDeJuego": 2
     },
     {
-        "idCategoria": "02",
-        "tipoCategoria": "Arte",
+        "idCategoria": "12",
+        "tipoCategoria": "02",
 		"tipoDeJuego": 2
     },
 	{
-        "idCategoria": "03",
-        "tipoCategoria": "Arte",
+        "idCategoria": "13",
+        "tipoCategoria": "03",
 		"tipoDeJuego": 2
     },
 	{
-        "idCategoria": "04",
-        "tipoCategoria": "Arte",
+        "idCategoria": "14",
+        "tipoCategoria": "04",
 		"tipoDeJuego": 2
     },
 	{
-        "idCategoria": "05",
-        "tipoCategoria": "Arte",
+        "idCategoria": "15",
+        "tipoCategoria": "05",
 		"tipoDeJuego": 2
     },
 	{
-        "idCategoria": "06",
-        "tipoCategoria": "Arte",
+        "idCategoria": "16",
+        "tipoCategoria": "06",
 		"tipoDeJuego": 2
     },
 	{
-        "idCategoria": "07",
-        "tipoCategoria": "Arte",
+        "idCategoria": "17",
+        "tipoCategoria": "07",
 		"tipoDeJuego": 2
     }
 ]

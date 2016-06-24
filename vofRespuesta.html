@@ -16,29 +16,21 @@
     <script src="js/respuesta.js"></script>
 	<script>
         $(document).ready(function(){
-			var rtaReal = parseInt(juego.getUrlParameter('rtaReal'));
 			var rtaSeleccionada = parseInt(juego.getUrlParameter('rtaSeleccionada'));
-			var pregunta = parseInt(juego.getUrlParameter('pregunta'));
-			var audio;
+			var pregunta = juego.getUrlParameter('pregunta');
 			
 			managerRespuestas.init();
-			managerRespuestas.mostrarRespuestaCorrecta(pregunta,1);
 			managerRespuestas.verificarRespuestaVoF(pregunta,1,rtaSeleccionada);
 			
+			$('#puntos').html(localStorage.puntajePuntual);
+			$('#etapa').html(localStorage.etapa);
 			
-			
-			if(rta == 1) {
-				$('#valor').html('Verdadero');
-				
+			if (Number(localStorage.etapa) == 3) {
+				$('#siguiente').attr('href','vofFinal.html?categoria='+localStorage.categoria);
 			} else {
-				$('#valor').html('Falso');
-				audio = new Audio('audio_file.mp3');
-				audio.play();
+				$('#siguiente').attr('href','vofPregunta.html?categoria='+localStorage.categoria);
 			}
 			
-			$('#puntos').html(localStorage.puntajePuntual);
-			
-			$('#siguiente').attr('href','vofPregunta.html?categoria='+localStorage.categoria);
 
         });
     </script>
@@ -50,9 +42,9 @@
 		</div>
 		<div class="pantalla-juego">
 			<div class="home"><a href="vof.html"><img src="img/home.png" alt=""></a></div>
-			<div class="nro">- 1 de 3 -</div>
+			<div class="nro">- <span id="etapa">1</span> de 3 -</div>
 			<h1>Verdadero <span class="p-nja">o Falso</span></h1>
-			<p class="resultado"><strong id="valor">Verdadero</strong></p>
+			<p class="resultado"><strong id="valor"></strong></p>
 			<p class="explicacion"></p>
 			<div class="suma">Suma: <span id="puntos"></span> puntos</div>
 			<div class="next"><a id="siguiente" > Siguiente </a></div>

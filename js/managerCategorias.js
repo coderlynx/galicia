@@ -15,14 +15,6 @@ var managerCategorias = {
                 });
 		  }
 		});
-        /*$.getJSON(
-            "json/preguntas.json",
-            function(data) { 
-                $.each(data, function(key, value) {
-                    preguntas.push(value);
-                });
-            }
-        );*/
     },
 	mostrarCategorias: function(tipoDeJuego,url) {
 		//para el sabias que
@@ -32,7 +24,7 @@ var managerCategorias = {
 				var li = $("<li>");
 				var a = $("<a>");
 				a.attr('href',url + value['idCategoria']);
-				a.html(value['idCategoria']);
+				a.html(value['tipoCategoria']);
 				li.append(a);
 				ul_sabias_que.append(li);
 			}

@@ -2,88 +2,85 @@
    {
         "id": "01",
         "idCategoria": "01",
-        "texoPregunta": "Un bebé bien alimentado aumenta más de peso por semana entre los 4 y 6 meses, que entre los 6 meses y el año.",
+        "textoPregunta": "Un bebé bien alimentado aumenta más de peso por semana entre los 4 y 6 meses, que entre los 6 meses y el año.",
         "puntaje": 100,
-		"tipoDeJuego": 1,
-		"respuesta": true
+		"tipoDeJuego": 1
     },
     {
         "id": "02",
         "idCategoria": "01",
-        "texoPregunta": "La lactancia materna no necesita complementos en bebés menores de 6 meses.",
+        "textoPregunta": "La lactancia materna no necesita complementos en bebés menores de 6 meses.",
         "puntaje": 200,
-		"tipoDeJuego": 1,
-		"respuesta": false
+		"tipoDeJuego": 1
     },
     {
         "id": "03",
         "idCategoria": "01",
-        "texoPregunta": "Es mandatario que, en cada toma de pecho, el bebé se alimente de ambos pechos.",
+        "textoPregunta": "Es mandatario que, en cada toma de pecho, el bebé se alimente de ambos pechos.",
         "puntaje": 300,
-		"tipoDeJuego": 1,
-		"respuesta": false
+		"tipoDeJuego": 1
     },
     {
         "id": "04",
         "idCategoria": "02",
-        "texoPregunta": "Pregunta 1 de categoria 2?",
+        "textoPregunta": "Pregunta 1 de categoria 2?",
         "puntaje": 400,
 		"tipoDeJuego": 1
     },
     {
         "id": "05",
         "idCategoria": "02",
-        "texoPregunta": "Pregunta 2 de categoria 2?",
+        "textoPregunta": "Pregunta 2 de categoria 2?",
         "puntaje": 500,
 		"tipoDeJuego": 1
     },
     {
         "id": "06",
         "idCategoria": "02",
-        "texoPregunta": "Pregunta 3 de categoria 2?",
+        "textoPregunta": "Pregunta 3 de categoria 2?",
         "puntaje": 100,
 		"tipoDeJuego": 1
     },
 	
     {
         "id": "01",
-        "idCategoria": "01",
-        "texoPregunta": "¿En Argentina la prevalencia más alta de desnutrición es la que se manifiesta por déficit de talla o retraso del crecimiento?",
+        "idCategoria": "11",
+        "textoPregunta": "¿En Argentina la prevalencia más alta de desnutrición es la que se manifiesta por déficit de talla o retraso del crecimiento?",
         "puntaje": 100,
 		"tipoDeJuego": 2
     },
     {
         "id": "02",
-        "idCategoria": "01",
-        "texoPregunta": "Pregunta 2 de categoria 1 alasasdsd?",
+        "idCategoria": "11",
+        "textoPregunta": "Pregunta 2 de categoria 1 alasasdsd?",
         "puntaje": 200,
 		"tipoDeJuego": 2
     },
     {
         "id": "03",
-        "idCategoria": "01",
-        "texoPregunta": "Pregunta 3 de categoria 1 alsdasdsd?",
+        "idCategoria": "11",
+        "textoPregunta": "Pregunta 3 de categoria 1 alsdasdsd?",
         "puntaje": 300,
 		"tipoDeJuego": 2
     },
     {
         "id": "04",
-        "idCategoria": "02",
-        "texoPregunta": "Pregunta 1 de categoria 2?",
+        "idCategoria": "12",
+        "textoPregunta": "Pregunta 1 de categoria 2?",
         "puntaje": 400,
 		"tipoDeJuego": 2
     },
     {
         "id": "05",
-        "idCategoria": "02",
-        "texoPregunta": "Pregunta 2 de categoria 2?",
+        "idCategoria": "12",
+        "textoPregunta": "Pregunta 2 de categoria 2?",
         "puntaje": 500,
 		"tipoDeJuego": 2
     },
     {
         "id": "06",
-        "idCategoria": "02",
-        "texoPregunta": "Pregunta 3 de categoria 2?",
+        "idCategoria": "12",
+        "textoPregunta": "Pregunta 3 de categoria 2?",
         "puntaje": 100,
 		"tipoDeJuego": 2
     }
