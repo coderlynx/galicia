@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Banco Galicia</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="css/estilos.css">
+	<script src="js/lib/jquery-2.2.4.min.js"></script>
+	<script>
+        $(document).ready(function(){
+			
+			$('#puntajeFinal').html(localStorage.puntajeAcumulado);
+		
+			localStorage.setItem("etapa", 0);
+			localStorage.setItem("puntajeAcumulado", 0);
+			localStorage.setItem("puntajePuntual", 0);
+			localStorage.setItem("categoria", 0);
+
+        });
+    </script>
+</head>
+<body>
+	<div class="contenedor">
+		<div class="header">
+			<div class="logo1"><img src="img/logo-galicia-sustentable.jpg" alt=""></div><div class="logo2"><img src="img/logo-galicia.jpg" alt=""></div>
+		</div>
+		<div class="pantalla-juego">
+			<div class="home"><a href="vof.html"><img src="img/home.png" alt=""></a></div>
+			<h1>Verdadero <span class="p-nja">o Falso</span></h1>
+			<p class="resultado"><strong>Puntaje final:</strong></p>
+			<div class="suma"><strong><span id="puntajeFinal"></span> puntos</strong></div>
+			<div class="next"><a href="vof.html"> Nueva partida </a></div>
+		</div>
+		<div class="copyright"><p>Copyright 2001 Banco Galicia. Todos los derechos reservados. Prohibida la duplicación, distribución o almacenamiento en cualquier medio.</p></div>
+	</div>
+</body>
+</html>

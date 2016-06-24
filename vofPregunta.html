@@ -5,6 +5,69 @@
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="stylesheet" href="css/estilos.css">
+	<script src="js/lib/jquery-2.2.4.min.js"></script>
+    <script src="js/juego.js"></script>
+    <script src="js/categoria.js"></script>
+    <script src="js/managerCategorias.js"></script>
+	<script src="js/managerPreguntas.js"></script>
+    <script src="js/managerRespuestas.js"></script>
+    <script src="js/managerPuntaje.js"></script>
+    <script src="js/pregunta.js"></script>
+    <script src="js/respuesta.js"></script>
+	<script>
+        $(document).ready(function(){
+			var etapa,putaje;
+			
+			cambiarEtapa();
+
+			var categoria = juego.getUrlParameter('categoria');
+			localStorage.setItem("categoria", categoria);
+			
+            managerPreguntas.init();
+			managerPreguntas.mostrarPreguntasDeUnaCategoria(categoria,1);
+			
+			$(".opcion").click(function() {
+					var rta_seleccionada = parseInt($(this).data("valor"));
+					var rta_real = $('#rta').val();
+					var pregunta = $('#pregunta').val();
+					
+					if (rta_real == rta_seleccionada) {
+						sumarPuntaje();
+						cambiarPuntajeActual(100);
+					} else {
+						cambiarPuntajeActual(0);
+					}
+					
+					cambiarEtapa();
+					
+					if(etapa <= 3) {
+						window.location.href = "vofRespuesta.html?rtaReal=" + rta_real + "&rtaSeleccionada=" + rta_seleccionada + "&pregunta=" + pregunta;
+					} else {
+						window.location.href = "vofFinal.html";
+					}
+						
+						
+					managerPreguntas.mostrarPreguntasDeUnaCategoria(categoria,1);
+				});
+				
+				function sumarPuntaje() {
+						puntaje = Number(localStorage.puntaje) + 100; 
+						localStorage.setItem("puntajeAcumulado", puntaje);
+				
+				}
+				
+				function cambiarPuntajeActual(valor) {
+						localStorage.setItem("puntajePuntual", valor);
+				}
+				
+			function cambiarEtapa() {
+				etapa = Number(localStorage.etapa) + 1; 
+				localStorage.setItem("etapa",etapa);
+				$('#etapa').html(localStorage.etapa);
+			}
+          
+        });
+    </script>
 </head>
 <body>
 	<div class="contenedor">
@@ -18,8 +81,10 @@
 			<div class="imagen-juego-pregunta"><img src="img/alimentando-bb.png" alt=" "></div>
 			<div class="pregunta-respuesta">
 				<p class="consigna">Un bebé bien alimentado aumenta más de peso por semana entre los 4 y 6 meses, que entre los 6 meses y el año.</p>
-				<a href="vof_2.html" class="opcion-v">V</a>
-				<a href="vof_2.html" class="opcion-f">F</a>
+				<a href="vof_2.html" class="opcion-v" data-valor="1">V</a>
+				<a href="vof_2.html" class="opcion-f" data-valor="0">F</a>
+				<input id="rta" type="hidden" />
+				<input id="pregunta" type="hidden" />
 			</div>
 		</div>
 		<div class="copyright"><p>Copyright 2001 Banco Galicia. Todos los derechos reservados. Prohibida la duplicación, distribución o almacenamiento en cualquier medio.</p></div>

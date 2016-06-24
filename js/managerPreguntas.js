@@ -48,6 +48,7 @@ var managerPreguntas = {
     },
 	mostrarPreguntasDeUnaCategoria: function(categoria, tipoDeJuego) {
 		var consigna = $('.consigna');
+		var rta = $('#rta');
 		var preguntasDeUnaCategoria = [];
 		var etapa = Number(localStorage.etapa) - 1; 
 		$.each(preguntas, function(key, value) {
@@ -55,7 +56,9 @@ var managerPreguntas = {
 				preguntasDeUnaCategoria.push(value);
 			} 
         });
-		consigna.html(preguntasDeUnaCategoria[etapa]['texoPregunta']);	
+		consigna.html(preguntasDeUnaCategoria[etapa]['texoPregunta']);
+		rta.val(preguntasDeUnaCategoria[etapa]['respuesta']);
+		rta.val(preguntasDeUnaCategoria[etapa]['id']);
 	},
     seleccionarPregunta: function(event) {
         // El contexto de la función es el article donde se bindea el evento 'click'

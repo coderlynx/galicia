@@ -93,5 +93,27 @@ var managerRespuestas = {
                 return false;
             }
         });
-    }
+    },
+	mostrarRespuestaCorrecta: function(pregunta, tipoDeJuego) {
+		$.each(respuestas, function(key, value) {
+            if (pregunta == value['idPregunta'] && tipoDeJuego == value['tipoDeJuego'] ) {
+					$('#explicacion').html(respuestas[key].textoRespuesta);
+					return;     
+            }
+        });
+	},
+	verificarRespuestaVoF: function(pregunta, tipoDeJuego,rtaSeleccionada) {
+		$.each(respuestas, function(key, value) {
+            if (pregunta == value['idPregunta'] && tipoDeJuego == value['tipoDeJuego'] ) {
+					if (value['esCorrecta'] == rtaSeleccionada){
+						audio = new Audio('correcto.mp3');
+						audio.play();
+					} else {
+						audio = new Audio('error.mp3');
+						audio.play();
+					}
+					return;     
+            }
+        });
+	}
 }

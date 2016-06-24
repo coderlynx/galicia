@@ -2,23 +2,26 @@
    {
         "id": "01",
         "idCategoria": "01",
-        "texoPregunta": "¿En Argentina la prevalencia más alta de desnutrición es la que se manifiesta por déficit de talla o retraso del crecimiento?",
+        "texoPregunta": "Un bebé bien alimentado aumenta más de peso por semana entre los 4 y 6 meses, que entre los 6 meses y el año.",
         "puntaje": 100,
-		"tipoDeJuego": 1
+		"tipoDeJuego": 1,
+		"respuesta": true
     },
     {
         "id": "02",
         "idCategoria": "01",
-        "texoPregunta": "Pregunta 2 de categoria 1 alasasdsd?",
+        "texoPregunta": "La lactancia materna no necesita complementos en bebés menores de 6 meses.",
         "puntaje": 200,
-		"tipoDeJuego": 1
+		"tipoDeJuego": 1,
+		"respuesta": false
     },
     {
         "id": "03",
         "idCategoria": "01",
-        "texoPregunta": "Pregunta 3 de categoria 1 alsdasdsd?",
+        "texoPregunta": "Es mandatario que, en cada toma de pecho, el bebé se alimente de ambos pechos.",
         "puntaje": 300,
-		"tipoDeJuego": 1
+		"tipoDeJuego": 1,
+		"respuesta": false
     },
     {
         "id": "04",
