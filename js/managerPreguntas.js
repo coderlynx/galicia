@@ -4,17 +4,77 @@ var managerPreguntas = {
         return this;
     },
     init: function() {
-        // Reemplazar por archivo .php
+        
 		$.ajax({
 		  url: "json/preguntas.json",
 		  dataType: 'json',
 		  async: false,
 		  success: function(data) {
-			$.each(data, function(key, value) {
-                    preguntas.push(value);
-                });
+            $.each(data, function(key, value) {
+                preguntas.push(value);
+            });
 		  }
 		});
+    },
+    dibujarCajasPreguntas: function() {
+        var listaPreguntas = $(".preguntas");  
+        var totalCajas = 5;
+        var li = {}, a = {};
+        var url = 
+        
+        $.each(listaPreguntas, function(key, value) {
+
+            for (var i = 1; i <= totalCajas; i++) {
+                
+                i = (i < 10) ? ("0" + i) : i;
+                
+                li = $("<li>");
+                li.attr('data-preg', i);
+                a = $("<a>");
+//                a.attr('href', "?categoria=" + 
+//                       $(value).parent().data("cat") + 
+//                       "&pregunta=" + li.data("preg"));
+                a.attr('href', "#");
+                a.text(i * 100);
+                li.append(a);
+                $(value).append(li);
+            }
+        
+        });
+    },
+    mostrarPregunta: function(idCategoria, idPregunta) {
+        
+        $.each(preguntas, function(key, value) {
+            if (value['idCategoria'] == idCategoria && 
+                value['id'] == idPregunta) {
+                $(".consigna-trivia").text(value['textoPregunta']);
+                sessionStorage.setItem("textoPregunta", value['textoPregunta']);
+                sessionStorage.setItem("puntajePregunta", value['puntaje']);
+                
+                // Falta incorporar la imagen de cada pregunta
+                
+                var rta = $(".opciones-trivia");
+                var a = {};
+                
+                $.each(respuestas, function(key, value) {
+                    if (value['idPregunta'] == idPregunta) {
+                        a = $("<a>");
+//                        a.attr('href', 'triviaRespuesta.html?categoria=' + 
+//                               idCategoria + '&pregunta=' + idPregunta + 
+//                               '&respuesta=' + value['id']);
+                        a.attr({'href': '#', 'data-rta': value['id']});
+                        a.text(value['textoRespuesta']);
+                        rta.append(a);
+                        
+                        if (value['esCorrecta'] == 1) {
+                            sessionStorage.setItem("textoRespuestaCorrecta", "(" + 
+                                                   value['textoRespuesta'] + ")");
+                        }
+                    } 
+                });
+            } 
+        });
+        
     },
     mostrarPreguntas: function(idCategoria,tipoDeJuego) {
         var section = $("#preguntas");

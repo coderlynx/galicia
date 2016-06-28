@@ -18,6 +18,35 @@ var managerRespuestas = {
 		  }
 		});
     },
+    mostrarRespuesta: function(idPregunta, idRespuesta) {
+        $(".consigna-trivia").text(sessionStorage.getItem("textoPregunta"));
+        
+        $.each(respuestas, function(key, value) {
+            if (idPregunta == value['idPregunta'] && 
+                idRespuesta == value['id']) {
+                
+                var resul = (value['esCorrecta'] == 0) ? "Incorrecto" : "Correcto";
+                
+                var suma = 0;
+                if (resul == "Incorrecto") {
+                    suma = 0;
+                } else {
+                    suma = sessionStorage.getItem("puntajePregunta");
+                    managerPuntaje.calcularPuntaje(suma);
+                }
+                
+                var audio = (suma == 0) ? new Audio('sonidos/error.mp3') : 
+                            new Audio('sonidos/correcto.mp3');
+                audio.play();
+                
+                $(".resultado").html("<strong>" + resul + "</strong>");
+                
+                $(".respuesta-correcta").text(sessionStorage.getItem("textoRespuestaCorrecta"));
+                
+                $(".suma").text("Suma: " + suma + " puntos."); 
+            }
+        });
+    },
     mostrarRespuestas: function(contenedor, pregunta) {
         if(!$(contenedor).hasClass('desplegado')) {
             var idPregunta = pregunta.self.id;

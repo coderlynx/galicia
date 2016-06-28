@@ -6,23 +6,27 @@ var managerPuntaje = {
         return this;
     },
     init: function() {
-        var div = $("#score"), h3 = $("<h3>");
-        h3.text("PUNTAJE: " + managerPuntaje['puntajeInicial']);
-        div.append(h3);
+        var div = $(".puntos-trivia");
+        div.text("Puntos: " + managerPuntaje['puntajeInicial']);
     },
     calcularPuntaje: function(puntaje) {
-        managerPuntaje['puntajeActual'] += puntaje;
-        $("#score h3").text("PUNTAJE: " + managerPuntaje['puntajeActual']);
+        managerPuntaje['puntajeActual'] += parseInt(puntaje);
+        $(".puntos-trivia").text("Puntos: " + managerPuntaje['puntajeActual']);
         managerPuntaje.verificarExito();
     },
     verificarExito: function() {
         if (managerPuntaje['puntajeActual'] >= managerPuntaje['puntajeExito']) {
-            alert("Has ganado el juego!!!");
-            juego.reiniciarJuego();
+            var trivia = $(".trivia");
+            trivia.empty();
+            trivia.load("triviaFinal.html", function() {
+                $(".suma").html("<strong>" + managerPuntaje['puntajeActual'] +
+                                "</strong>");
+            });
+            //juego.reiniciarJuego();
         }
     },
     restablecerPuntaje: function() {
         managerPuntaje['puntajeActual'] = managerPuntaje['puntajeInicial'];
-        $("#score h3").text("PUNTAJE: " + managerPuntaje['puntajeActual']);
+        $(".puntos-trivia").text("Puntos: " + managerPuntaje['puntajeActual']);
     }
 }
