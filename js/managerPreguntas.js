@@ -1,4 +1,6 @@
 var preguntas = [];
+var preguntasYaRespondidas = [];
+
 var managerPreguntas = {
     self: function() {
         return this;
@@ -41,12 +43,28 @@ var managerPreguntas = {
             }
         
         });
+		
+		//borro las preguntas respondidas
+		preguntasYaRespondidas = JSON.parse(sessionStorage.getItem("preguntasYaRespondidas"));
+		$.each(preguntasYaRespondidas, function(key, value) {
+			$("div").find("[data-cat='" + value.categoria + "']").find("[data-preg='" + value.pregunta + "']").remove();
+        });
     },
-    mostrarPregunta: function(idCategoria, idPregunta) {
-        
+    mostrarPregunta: function(idCategoria, idPregunta, tipoDeJuego) {
+        var pregunta = {
+			categoria: idCategoria,
+			pregunta: idPregunta
+		};
+		
+		//guardo las preguntas seleccionada
+		preguntasYaRespondidas = JSON.parse(sessionStorage.getItem("preguntasYaRespondidas"));
+		preguntasYaRespondidas.push(pregunta);
+
+		sessionStorage.setItem("preguntasYaRespondidas", JSON.stringify(preguntasYaRespondidas));
+		
         $.each(preguntas, function(key, value) {
             if (value['idCategoria'] == idCategoria && 
-                value['id'] == idPregunta) {
+                value['id'] == idPregunta && value['tipoDeJuego'] == tipoDeJuego) {
                 $(".consigna-trivia").text(value['textoPregunta']);
                 sessionStorage.setItem("textoPregunta", value['textoPregunta']);
                 sessionStorage.setItem("puntajePregunta", value['puntaje']);
@@ -57,7 +75,7 @@ var managerPreguntas = {
                 var a = {};
                 
                 $.each(respuestas, function(key, value) {
-                    if (value['idPregunta'] == idPregunta) {
+                    if (value['idPregunta'] == idPregunta && value['tipoDeJuego'] == tipoDeJuego) {
                         a = $("<a>");
 //                        a.attr('href', 'triviaRespuesta.html?categoria=' + 
 //                               idCategoria + '&pregunta=' + idPregunta + 

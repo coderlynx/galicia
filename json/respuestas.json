@@ -8,35 +8,35 @@
     },
     {
         "id": "02",
-        "idPregunta": "01",
+        "idPregunta": "02",
         "textoRespuesta": "La LM -en situaciones especiales, muy poco frecuentes y siempre bajo estricta prescripción Médica - puede necesitar ser complementada o reemplazada con sucedáneos de la leche materna.",
         "esCorrecta": 0,
 		"tipoDeJuego":1
     },
     {
         "id": "03",
-        "idPregunta": "01",
+        "idPregunta": "03",
         "textoRespuesta": "Puede ofrecerse al niño en cada mamada uno, o los dos pechos.",
         "esCorrecta": 0,
 		"tipoDeJuego":1
     },
     {
         "id": "04",
-        "idPregunta": "02",
+        "idPregunta": "04",
         "textoRespuesta": "Animi optio ad nisi, atque eligendi quidem",
         "esCorrecta": 0,
 		"tipoDeJuego":1
     },
     {
         "id": "05",
-        "idPregunta": "02",
+        "idPregunta": "05",
         "textoRespuesta": "Animi optio ad nisi, atque eligendi quidem",
         "esCorrecta": 0,
 		"tipoDeJuego":1
     },
     {
         "id": "06",
-        "idPregunta": "02",
+        "idPregunta": "06",
         "textoRespuesta": "Animi optio ad nisi, atque eligendi quidem",
         "esCorrecta": 1,
 		"tipoDeJuego":1
@@ -44,38 +44,102 @@
 	
     {
         "id": "07",
-        "idPregunta": "03",
+        "idPregunta": "07",
         "textoRespuesta": "Animi optio ad nisi, atque eligendi quidem",
         "esCorrecta": true
     },
     {
         "id": "08",
-        "idPregunta": "03",
+        "idPregunta": "08",
         "textoRespuesta": "Animi optio ad nisi, atque eligendi quidem",
         "esCorrecta": false
     },
     {
         "id": "09",
-        "idPregunta": "03",
+        "idPregunta": "09",
         "textoRespuesta": "Animi optio ad nisi, atque eligendi quidem",
         "esCorrecta": false
     },
     {
         "id": "10",
-        "idPregunta": "4",
+        "idPregunta": "10",
         "textoRespuesta": "Animi optio ad nisi, atque eligendi quidem",
         "esCorrecta": false
     },
     {
         "id": "11",
-        "idPregunta": "4",
+        "idPregunta": "11",
         "textoRespuesta": "Animi optio ad nisi, atque eligendi quidem",
         "esCorrecta": false
     },
     {
         "id": "12",
-        "idPregunta": "4",
+        "idPregunta": "12",
         "textoRespuesta": "Animi optio ad nisi, atque eligendi quidem",
         "esCorrecta": true
+    },
+	
+	{
+        "id": "13",
+        "idPregunta": "01",
+        "textoRespuesta": "Esta es la correcta",
+        "esCorrecta": 1,
+		"tipoDeJuego":3
+    },
+    {
+        "id": "14",
+        "idPregunta": "01",
+        "textoRespuesta": "La LM -en situaciones especiales, muy poco frecuentes y siempre bajo estricta prescripción Médica - puede necesitar ser complementada o reemplazada con sucedáneos de la leche materna.",
+        "esCorrecta": 0,
+		"tipoDeJuego":3
+    },
+    {
+        "id": "15",
+        "idPregunta": "01",
+        "textoRespuesta": "Puede ofrecerse al niño en cada mamada uno, o los dos pechos.",
+        "esCorrecta": 0,
+		"tipoDeJuego":3
+    },
+    {
+        "id": "16",
+        "idPregunta": "02",
+        "textoRespuesta": "Animi optio ad nisi, atque eligendi quidem",
+        "esCorrecta": 0,
+		"tipoDeJuego":3
+    },
+    {
+        "id": "17",
+        "idPregunta": "02",
+        "textoRespuesta": "Animi optio ad nisi, atque eligendi quidem",
+        "esCorrecta": 0,
+		"tipoDeJuego":3
+    },
+    {
+        "id": "18",
+        "idPregunta": "02",
+        "textoRespuesta": "Esta es la correcta",
+        "esCorrecta": 1,
+		"tipoDeJuego":3
+    },
+	{
+        "id": "19",
+        "idPregunta": "03",
+        "textoRespuesta": "Animi optio ad nisi, atque eligendi quidem",
+        "esCorrecta": 0,
+		"tipoDeJuego":3
+    },
+    {
+        "id": "20",
+        "idPregunta": "03",
+        "textoRespuesta": "Animi optio ad nisi, atque eligendi quidem",
+        "esCorrecta": 0,
+		"tipoDeJuego":3
+    },
+    {
+        "id": "21",
+        "idPregunta": "03",
+        "textoRespuesta": "Esta es la correcta",
+        "esCorrecta": 1,
+		"tipoDeJuego":3
     }
 ]

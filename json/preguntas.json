@@ -43,45 +43,88 @@
     },
 	
     {
-        "id": "01",
+        "id": "07",
         "idCategoria": "11",
         "textoPregunta": "¿En Argentina la prevalencia más alta de desnutrición es la que se manifiesta por déficit de talla o retraso del crecimiento?",
         "puntaje": 100,
 		"tipoDeJuego": 2
     },
     {
-        "id": "02",
+        "id": "08",
         "idCategoria": "11",
         "textoPregunta": "Pregunta 2 de categoria 1 alasasdsd?",
         "puntaje": 200,
 		"tipoDeJuego": 2
     },
     {
-        "id": "03",
+        "id": "09",
         "idCategoria": "11",
         "textoPregunta": "Pregunta 3 de categoria 1 alsdasdsd?",
         "puntaje": 300,
 		"tipoDeJuego": 2
     },
     {
-        "id": "04",
+        "id": "10",
         "idCategoria": "12",
         "textoPregunta": "Pregunta 1 de categoria 2?",
         "puntaje": 400,
 		"tipoDeJuego": 2
     },
     {
-        "id": "05",
+        "id": "11",
         "idCategoria": "12",
         "textoPregunta": "Pregunta 2 de categoria 2?",
         "puntaje": 500,
 		"tipoDeJuego": 2
     },
     {
-        "id": "06",
+        "id": "12",
         "idCategoria": "12",
         "textoPregunta": "Pregunta 3 de categoria 2?",
         "puntaje": 100,
 		"tipoDeJuego": 2
+    },
+	
+	{
+        "id": "01",
+        "idCategoria": "01",
+        "textoPregunta": "Un bebé bien alimentado aumenta más de peso por semana entre los 4 y 6 meses, que entre los 6 meses y el año.",
+        "puntaje": 100,
+		"tipoDeJuego": 3
+    },
+    {
+        "id": "02",
+        "idCategoria": "01",
+        "textoPregunta": "La lactancia materna no necesita complementos en bebés menores de 6 meses.",
+        "puntaje": 200,
+		"tipoDeJuego": 3
+    },
+    {
+        "id": "03",
+        "idCategoria": "01",
+        "textoPregunta": "Es mandatario que, en cada toma de pecho, el bebé se alimente de ambos pechos.",
+        "puntaje": 300,
+		"tipoDeJuego": 3
+    },
+    {
+        "id": "04",
+        "idCategoria": "01",
+        "textoPregunta": "Pregunta 1 de categoria 2?",
+        "puntaje": 400,
+		"tipoDeJuego": 3
+    },
+    {
+        "id": "05",
+        "idCategoria": "01",
+        "textoPregunta": "Pregunta 2 de categoria 2?",
+        "puntaje": 500,
+		"tipoDeJuego": 1
+    },
+    {
+        "id": "06",
+        "idCategoria": "01",
+        "textoPregunta": "Pregunta 3 de categoria 2?",
+        "puntaje": 100,
+		"tipoDeJuego": 3
     }
 ]

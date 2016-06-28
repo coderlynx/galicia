@@ -19,7 +19,8 @@
 	<script>
         $(document).ready(function(){
             juego.init(3);
-
+			var preguntasYaRespondidas = [];
+			sessionStorage.setItem("preguntasYaRespondidas", JSON.stringify(preguntasYaRespondidas));
             bindearItems();
         });
         function bindearItems() {
@@ -30,6 +31,8 @@
 
                 sessionStorage.setItem("idCategoria", idCategoria);
                 sessionStorage.setItem("idPregunta", idPregunta);
+				
+				
 
                 var audio = new Audio("sonidos/beep.mp3");
                 audio.play();
@@ -38,7 +41,8 @@
                 trivia.empty();
                 trivia.load("triviaPregunta.html", function() {
                     managerPreguntas.mostrarPregunta(sessionStorage.getItem("idCategoria"),
-                                                    sessionStorage.getItem("idPregunta"));
+                                                    sessionStorage.getItem("idPregunta"),
+													3);
 
                     $(".opciones-trivia a").click(function() {
                         var idRespuesta = $(this).data("rta");
