@@ -113,8 +113,8 @@ var managerRespuestas = {
             }
             $(value).append(span);
             
-            if (resultados[index]['respuestaSeleccionada'] && 
-                resultados[index]['esCorrecta'])
+            //if (resultados[index]['respuestaSeleccionada'] && 
+            //    resultados[index]['esCorrecta'])
                 managerRespuestas.bindearPuntaje(resultados[index]['idPregunta']);
         });
     },

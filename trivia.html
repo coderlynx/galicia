@@ -22,10 +22,15 @@
 			var preguntasYaRespondidas = [];
 			sessionStorage.setItem("preguntasYaRespondidas", JSON.stringify(preguntasYaRespondidas));
             bindearItems();
+			
         });
         function bindearItems() {
             $(".preguntas li").click(function(event) {
-
+				var etapa;
+				
+				//cada vez que le hace click paso una etapa
+				cambiarEtapa();
+				
                 var idCategoria = $(this).parents("div:first").data("cat");
                 var idPregunta = $(this).data("preg");
 
@@ -57,7 +62,27 @@
                 });
             });
         }
+		function cambiarEtapa() {
+				etapa = Number(localStorage.etapa) + 1; 
+				localStorage.setItem("etapa",etapa);
+			}
+		
         function dibujarPanelTrivia() {
+		etapa = Number(localStorage.etapa); 
+			if (etapa >= 3) {
+				localStorage.setItem("etapa",0);
+				var preguntasYaRespondidas = [];
+				sessionStorage.setItem("preguntasYaRespondidas", JSON.stringify(preguntasYaRespondidas));
+			//if (managerPuntaje['puntajeActual'] >= managerPuntaje['puntajeExito']) {
+				var trivia = $(".trivia");
+				trivia.empty();
+				trivia.load("triviaFinal.html", function() {
+					$(".suma").html("<strong>" + managerPuntaje['puntajeActual'] +
+									"</strong>");
+				});
+				//juego.reiniciarJuego();
+			}
+			
             var trivia = $(".trivia");
             trivia.empty();
             trivia.html("<h1>Trivia</h1>");

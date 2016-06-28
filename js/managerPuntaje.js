@@ -2,6 +2,7 @@ var managerPuntaje = {
     puntajeInicial: 0,
     puntajeActual: 0,
     puntajeExito: 1000,
+	etapa: 1,
     self: function() {
         return this;
     },
@@ -15,7 +16,9 @@ var managerPuntaje = {
         managerPuntaje.verificarExito();
     },
     verificarExito: function() {
-        if (managerPuntaje['puntajeActual'] >= managerPuntaje['puntajeExito']) {
+		etapa = Number(localStorage.etapa); 
+		if (etapa > 3) {
+        //if (managerPuntaje['puntajeActual'] >= managerPuntaje['puntajeExito']) {
             var trivia = $(".trivia");
             trivia.empty();
             trivia.load("triviaFinal.html", function() {
