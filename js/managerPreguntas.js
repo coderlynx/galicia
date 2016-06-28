@@ -47,7 +47,7 @@ var managerPreguntas = {
 		//borro las preguntas respondidas
 		preguntasYaRespondidas = JSON.parse(sessionStorage.getItem("preguntasYaRespondidas"));
 		$.each(preguntasYaRespondidas, function(key, value) {
-			$("div").find("[data-cat='" + value.categoria + "']").find("[data-preg='" + value.pregunta + "']").remove();
+			$("div").find("[data-cat='" + value.categoria + "']").find("[data-preg='" + value.pregunta + "']").addClass('disabled');//.remove();
         });
     },
     mostrarPregunta: function(idCategoria, idPregunta, tipoDeJuego) {

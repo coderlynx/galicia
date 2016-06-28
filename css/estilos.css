@@ -204,6 +204,11 @@ h1,h2,h3,h4,p,a{color: #838375;}
 .trivia-acierto a{background-color: #FF6600; color: #fff;}
 .trivia-acierto .resultado{margin-top: 20px;}
 
+.disabled{
+    pointer-events:none;
+    opacity:0.4;
+}
+
 
 /*QUERYS*/
 @media all and (max-width: 985px){
