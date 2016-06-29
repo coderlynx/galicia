@@ -2,42 +2,42 @@
 	{
         "id": "01",
         "idPregunta": "01",
-        "textoRespuesta": "Entre los 4-6 meses aumenta (en gramos) casi el doble por semana que al año de vida.",
+        "textoRespuesta": "(entre los 4-6 meses aumenta – en gramos- casi el doble por semana que al año de vida.",
         "esCorrecta": 1,
 		"tipoDeJuego":1
     },
     {
         "id": "02",
         "idPregunta": "02",
-        "textoRespuesta": "La LM -en situaciones especiales, muy poco frecuentes y siempre bajo estricta prescripción Médica - puede necesitar ser complementada o reemplazada con sucedáneos de la leche materna.",
+        "textoRespuesta": "La LM -en situaciones especiales, muy poco frecuentes y siempre bajo estricta prescripción Médica-  puede necesitar ser complementada o reemplazada con sucedáneos de la leche materna.",
         "esCorrecta": 0,
 		"tipoDeJuego":1
     },
     {
         "id": "03",
         "idPregunta": "03",
-        "textoRespuesta": "Puede ofrecerse al niño en cada mamada uno, o los dos pechos.",
+        "textoRespuesta":"Los rechazan principalmente por su consistencia por lo que se recomienda volver a probar reiteradas veces en diferentes comidas y, de ser necesario, cambiar la forma de preparación.",
         "esCorrecta": 0,
 		"tipoDeJuego":1
     },
     {
         "id": "04",
         "idPregunta": "04",
-        "textoRespuesta": "Animi optio ad nisi, atque eligendi quidem",
+        "textoRespuesta": "Puede ofrecerse al niño en cada mamada uno, o los dos pechos",
         "esCorrecta": 0,
 		"tipoDeJuego":1
     },
     {
         "id": "05",
         "idPregunta": "05",
-        "textoRespuesta": "Animi optio ad nisi, atque eligendi quidem",
-        "esCorrecta": 0,
+        "textoRespuesta": "Pero los tiempos no son exactos y dependen de la salud y desarrollo del niño.",
+        "esCorrecta": 1,
 		"tipoDeJuego":1
     },
     {
         "id": "06",
         "idPregunta": "06",
-        "textoRespuesta": "Animi optio ad nisi, atque eligendi quidem",
+        "textoRespuesta": "Por eso debe realizar suplementación de los mismos, con la correspondiente indicación y supervisión médica.",
         "esCorrecta": 1,
 		"tipoDeJuego":1
     },
@@ -45,38 +45,44 @@
     {
         "id": "07",
         "idPregunta": "07",
-        "textoRespuesta": "Animi optio ad nisi, atque eligendi quidem",
-        "esCorrecta": true
+        "textoRespuesta": "Si tomó de los dos pechos, en la próxima toma debe empezar por el último que ha tomado.",
+        "esCorrecta": 0,
+		"tipoDeJuego":1
     },
     {
         "id": "08",
         "idPregunta": "08",
-        "textoRespuesta": "Animi optio ad nisi, atque eligendi quidem",
-        "esCorrecta": false
+        "textoRespuesta": "Tampoco deben ofrecerse yogures o derivados lácteos fluidos.",
+        "esCorrecta": 1,
+		"tipoDeJuego":1
     },
     {
         "id": "09",
         "idPregunta": "09",
-        "textoRespuesta": "Animi optio ad nisi, atque eligendi quidem",
-        "esCorrecta": false
+        "textoRespuesta": "Su usa para contribuir al cumplimiento de los altos requerimientos en la alimentación durante ese período.",
+        "esCorrecta": 1,
+		"tipoDeJuego":1
     },
     {
         "id": "10",
         "idPregunta": "10",
-        "textoRespuesta": "Animi optio ad nisi, atque eligendi quidem",
-        "esCorrecta": false
+        "textoRespuesta": "En un bebé sano, la leche materna no necesita ningún agregado",
+        "esCorrecta": 0,
+		"tipoDeJuego":1
     },
     {
         "id": "11",
         "idPregunta": "11",
-        "textoRespuesta": "Animi optio ad nisi, atque eligendi quidem",
-        "esCorrecta": false
+        "textoRespuesta": "Pero debe hacerse siempre bajo prescripción y supervisión médica",
+        "esCorrecta": 1,
+		"tipoDeJuego":1
     },
     {
         "id": "12",
         "idPregunta": "12",
-        "textoRespuesta": "Animi optio ad nisi, atque eligendi quidem",
-        "esCorrecta": true
+        "textoRespuesta": "E idealmente sumar como postre idealmente frutas",
+        "esCorrecta": 1,
+		"tipoDeJuego":1
     },
 	
 	{

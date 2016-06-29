@@ -84,6 +84,21 @@
         "idCategoria": "17",
         "tipoCategoria": "07",
 		"tipoDeJuego": 2
+    },
+	{
+        "idCategoria": "18",
+        "tipoCategoria": "08",
+		"tipoDeJuego": 2
+    },
+	{
+        "idCategoria": "19",
+        "tipoCategoria": "09",
+		"tipoDeJuego": 2
+    },
+	{
+        "idCategoria": "20",
+        "tipoCategoria": "10",
+		"tipoDeJuego": 2
     }
 	
 ]

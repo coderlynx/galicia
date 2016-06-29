@@ -16,71 +16,281 @@
     {
         "id": "03",
         "idCategoria": "01",
-        "textoPregunta": "Es mandatario que, en cada toma de pecho, el bebé se alimente de ambos pechos.",
+        "textoPregunta": "Los niños en sus primeros años de vida suelen rechazar algunos alimentos principalmente por su sabor más que por su consistencia.",
         "puntaje": 300,
 		"tipoDeJuego": 1
     },
     {
         "id": "04",
         "idCategoria": "02",
-        "textoPregunta": "Pregunta 1 de categoria 2?",
+        "textoPregunta": "Es mandatario que, en cada toma de pecho, el bebé se alimente de ambos pechos.",
         "puntaje": 400,
 		"tipoDeJuego": 1
     },
     {
         "id": "05",
         "idCategoria": "02",
-        "textoPregunta": "Pregunta 2 de categoria 2?",
+        "textoPregunta": "En general, la alimentación de un niño a los 6 meses es papilla, a los 8 meses comienza con algunos trozos pequeños y al año es semejante a la comida del adulto.",
         "puntaje": 500,
 		"tipoDeJuego": 1
     },
     {
         "id": "06",
         "idCategoria": "02",
-        "textoPregunta": "Pregunta 3 de categoria 2?",
+        "textoPregunta": "Una alimentación óptima durante el embarazo es incapaz de cubrir los altos requerimientos de algunos nutrientes críticos",
+        "puntaje": 100,
+		"tipoDeJuego": 1
+    },
+	{
+        "id": "07",
+        "idCategoria": "03",
+        "textoPregunta": "Durante la lactancia materna siempre debe iniciarse la toma del mismo pecho.",
+        "puntaje": 100,
+		"tipoDeJuego": 1
+    },
+    {
+        "id": "08",
+        "idCategoria": "03",
+        "textoPregunta": "La leche de vaca (entera y descremada) no se debe ofrecer hasta después de los 12 meses de vida",
+        "puntaje": 200,
+		"tipoDeJuego": 1
+    },
+    {
+        "id": "09",
+        "idCategoria": "03",
+        "textoPregunta": "Es fundamental el aporte de hierro en el 2do y 3er trimestre del embarazo",
+        "puntaje": 300,
+		"tipoDeJuego": 1
+    },
+    {
+        "id": "10",
+        "idCategoria": "04",
+        "textoPregunta": "Es importante adicionar azúcar a la lecha materna entre los 6 y 12  meses de vida del bebé.",
+        "puntaje": 400,
+		"tipoDeJuego": 1
+    },
+    {
+        "id": "11",
+        "idCategoria": "04",
+        "textoPregunta": "Junto con el hierro y el ácido fólico es fundamental durante el embarazo la suplementación con ácidos grasos esenciales en cápsulas, y vitaminas",
+        "puntaje": 500,
+		"tipoDeJuego": 1
+    },
+    {
+        "id": "12",
+        "idCategoria": "04",
+        "textoPregunta": "En niños de 4 a 6 años deben ofrecerse verduras, legumbres, pasta, arroz, pescados, carnes magras y huevos.",
         "puntaje": 100,
 		"tipoDeJuego": 1
     },
 	
     {
-        "id": "07",
+        "id": "13",
         "idCategoria": "11",
         "textoPregunta": "¿En Argentina la prevalencia más alta de desnutrición es la que se manifiesta por déficit de talla o retraso del crecimiento?",
         "puntaje": 100,
 		"tipoDeJuego": 2
     },
     {
-        "id": "08",
+        "id": "14",
         "idCategoria": "11",
-        "textoPregunta": "Pregunta 2 de categoria 1 alasasdsd?",
+        "textoPregunta": "¿La malnutrición crónica que sufren muchas madres desde su infancia impacta sobre sus embarazos?",
+        "puntaje": 200,
+		"tipoDeJuego": 2
+    },
+    {
+        "id": "15",
+        "idCategoria": "11",
+        "textoPregunta": "¿Que hay que realizar 4 comidas al día (desayuno, almuerzo, merienda y cena) que  incluyan verduras, frutas, legumbres, cereales, leche, yogur o queso, huevos, carnes y aceites?",
+        "puntaje": 300,
+		"tipoDeJuego": 2
+    },
+    {
+        "id": "16",
+        "idCategoria": "12",
+        "textoPregunta": "¿El déficit de talla o retraso del crecimiento son consecuencias frecuentes de una desnutrición crónica?",
+        "puntaje": 400,
+		"tipoDeJuego": 2
+    },
+    {
+        "id": "17",
+        "idCategoria": "12",
+        "textoPregunta": "¿El bajo peso en el embarazo aumenta el riesgo de tener partos prematuros y bajo peso del bebé?",
+        "puntaje": 500,
+		"tipoDeJuego": 2
+    },
+    {
+        "id": "18",
+        "idCategoria": "12",
+        "textoPregunta": "¿Mantener una vida activa, un peso adecuado y una alimentación saludable previene enfermedades?",
+        "puntaje": 100,
+		"tipoDeJuego": 2
+    },
+	{
+        "id": "07",
+        "idCategoria": "13",
+        "textoPregunta": "¿La malnutrición incluye todas las formas clínicas de desnutrición, y también el sobrepeso y la obesidad?",
+        "puntaje": 100,
+		"tipoDeJuego": 2
+    },
+    {
+        "id": "08",
+        "idCategoria": "13",
+        "textoPregunta": "¿El sobrepeso y obesidad aumentan el riesgo de desarrollar diabetes e hipertensión arterial a la madre durante el embarazo o de padecer complicaciones durante el parto?",
         "puntaje": 200,
 		"tipoDeJuego": 2
     },
     {
         "id": "09",
-        "idCategoria": "11",
-        "textoPregunta": "Pregunta 3 de categoria 1 alsdasdsd?",
+        "idCategoria": "13",
+        "textoPregunta": "¿A lo largo del día hay que beber al menos 2 litros de líquidos, sin azúcar, preferentemente agua?",
         "puntaje": 300,
 		"tipoDeJuego": 2
     },
     {
         "id": "10",
-        "idCategoria": "12",
-        "textoPregunta": "Pregunta 1 de categoria 2?",
+        "idCategoria": "14",
+        "textoPregunta": "¿Para estar bien nutridos no solo es necesario comer, sino recibir una alimentación adecuada, equilibrada, completa y una buena estimulación?",
         "puntaje": 400,
 		"tipoDeJuego": 2
     },
     {
         "id": "11",
-        "idCategoria": "12",
-        "textoPregunta": "Pregunta 2 de categoria 2?",
+        "idCategoria": "14",
+        "textoPregunta": "¿A una embarazada obesa o con sobrepeso se le considera al embarazo como de alto riesgo?",
         "puntaje": 500,
 		"tipoDeJuego": 2
     },
     {
         "id": "12",
-        "idCategoria": "12",
-        "textoPregunta": "Pregunta 3 de categoria 2?",
+        "idCategoria": "14",
+        "textoPregunta": "¿No hay que esperar a tener sed para hidratarse?",
+        "puntaje": 100,
+		"tipoDeJuego": 2
+    },
+	{
+        "id": "07",
+        "idCategoria": "15",
+        "textoPregunta": "¿Los primeros años de la vida constituyen la fase más dinámica en el proceso de crecimiento y este resulta extremadamente vulnerable a las diferentes condiciones?",
+        "puntaje": 100,
+		"tipoDeJuego": 2
+    },
+    {
+        "id": "08",
+        "idCategoria": "15",
+        "textoPregunta": "¿La alimentación debe estar basada en el consumo diario de alimentos de cada uno de los grupos: harinas y cereales, legumbres, frutas frescas y secas, verduras de todo tipo y color, carnes rojas, pescados, huevo, aceites crudos, etc.?",
+        "puntaje": 200,
+		"tipoDeJuego": 2
+    },
+    {
+        "id": "09",
+        "idCategoria": "15",
+        "textoPregunta": "¿Es necesario consumir por día al menos medio plato de verduras en el almuerzo, medio plato en la cena y 2 o 3 fruta?",
+        "puntaje": 300,
+		"tipoDeJuego": 2
+    },
+    {
+        "id": "10",
+        "idCategoria": "16",
+        "textoPregunta": "¿Los déficits o excesos en el estado nutricional infantil están asociados a múltiples factores del ambiente en el que vive el niño desde su concepción?",
+        "puntaje": 400,
+		"tipoDeJuego": 2
+    },
+    {
+        "id": "11",
+        "idCategoria": "16",
+        "textoPregunta": "¿Es fundamental evitar el alto consumo de alimentos que proporcionan gran cantidad de calorías, sin aportar nutrientes específicos?",
+        "puntaje": 500,
+		"tipoDeJuego": 2
+    },
+    {
+        "id": "12",
+        "idCategoria": "16",
+        "textoPregunta": "¿Los huevos son un buen sustituto en caso que no se consume la cantidad necesaria de carne semanal?",
+        "puntaje": 100,
+		"tipoDeJuego": 2
+    },
+	{
+        "id": "07",
+        "idCategoria": "17",
+        "textoPregunta": "¿Una buena nutrición es la primera línea de defensa contra numerosas enfermedades infantiles?",
+        "puntaje": 100,
+		"tipoDeJuego": 2
+    },
+    {
+        "id": "08",
+        "idCategoria": "17",
+        "textoPregunta": "¿Las recomendaciones nutricionales varían según el estado nutricional de la mujer previo al embarazo, y determina cuántos kilos debe aumentar la madre durante todo este período?",
+        "puntaje": 200,
+		"tipoDeJuego": 2
+    },
+    {
+        "id": "09",
+        "idCategoria": "17",
+        "textoPregunta": "¿Es recomendable utilizar al menos una vez por semana un puñado de frutas secas sin salar (maní, nueces, almendras, avellanas, castañas, etc.) o semillas sin salar (chía, girasol, sésamo, lino, etc.)?",
+        "puntaje": 300,
+		"tipoDeJuego": 2
+    },
+    {
+        "id": "10",
+        "idCategoria": "18",
+        "textoPregunta": "¿Las capacidades que puede alcanzar un individuo dependen tanto de factores genéticos como ambientales, y la adecuada nutrición es un factor clave para desarrollar esa potencialidad?",
+        "puntaje": 400,
+		"tipoDeJuego": 2
+    },
+    {
+        "id": "11",
+        "idCategoria": "18",
+        "textoPregunta": "¿Se debe supervisar el crecimiento y desarrollo de los niños para poder compararlo con los patrones de referencia de la OMS, y reconocer a tiempo diferentes circunstancias que deben ser corregidas?",
+        "puntaje": 500,
+		"tipoDeJuego": 2
+    },
+    {
+        "id": "12",
+        "idCategoria": "18",
+        "textoPregunta": "¿Combinar legumbres y cereales es una alternativa para reemplazar la carne en algunas comidas?",
+        "puntaje": 100,
+		"tipoDeJuego": 2
+    },
+	{
+        "id": "07",
+        "idCategoria": "19",
+        "textoPregunta": "¿Pasados los primeros años de vida una mala nutrición deja secuelas permanentes que dificultan la adaptación a la sociedad, la habilidad emocional y el aprendizaje?",
+        "puntaje": 100,
+		"tipoDeJuego": 2
+    },
+    {
+        "id": "08",
+        "idCategoria": "19",
+        "textoPregunta": "¿Que una alimentación sana incluye la incorporación diaria de alimentos de todos los grupos, complementándolo con 30 minutos de actividad física?",
+        "puntaje": 200,
+		"tipoDeJuego": 2
+    },
+    {
+        "id": "09",
+        "idCategoria": "19",
+        "textoPregunta": "¿En lo posible hay que alternar aceites (como girasol, maíz, soja, girasol alto oleico, oliva y canola) en la preparación de las comidas?",
+        "puntaje": 300,
+		"tipoDeJuego": 2
+    },
+    {
+        "id": "10",
+        "idCategoria": "20",
+        "textoPregunta": "¿La alimentación de un niño en los primeros años de vida tiene un efecto profundo en su salud, así como en su habilidad para aprender, comunicarse, pensar analíticamente?",
+        "puntaje": 400,
+		"tipoDeJuego": 2
+    },
+    {
+        "id": "11",
+        "idCategoria": "20",
+        "textoPregunta": "¿La alimentación de un niño en los primeros años de vida tiene un efecto en su capacidad de socializarse efectivamente y adaptarse a nuevos ambientes y personas?",
+        "puntaje": 500,
+		"tipoDeJuego": 2
+    },
+    {
+        "id": "12",
+        "idCategoria": "20",
+        "textoPregunta": "¿En condiciones de pobreza crónica, propias del subdesarrollo, gran parte de los individuos se ven limitados en la expresión de sus potencialidades genéticas, tanto físicas como intelectuales?",
         "puntaje": 100,
 		"tipoDeJuego": 2
     },
